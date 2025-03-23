@@ -1,0 +1,180 @@
+@media (max-width: 1050px) {
+    .container {
+        padding: 0 40px;
+    }
+    .header__body {
+        flex-direction: column;
+    }
+    .header__nav {
+        width: 100%;
+    }
+    .about__card {
+        right: 40px;
+        width: 35%;
+    }
+    .spikers__block {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .spikers__block img {
+        margin: 0 auto;
+        object-fit: cover;
+    }
+    .spikers__block-text {
+        height: 100%;
+    }
+    .precent__img img {
+        max-width: 360px;
+    }
+    .precent__img .precent__img-dis {
+        right: -40px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .h-img {
+        display: none;
+    }
+    .header__nav {
+        gap: 0;
+    }
+    .hero__titles {
+        width: 100%;
+    }
+    .hero__logo {
+        display: none;
+    }
+    .programm__last {
+        max-width: 85%;
+    }
+    .programm__accordion {
+        max-width: 70%;
+    }
+    .precent__img {
+        align-self: center;
+    }
+    .sponser__block:first-child img{
+        width: 100%;
+        min-height: 116px;
+    }
+}
+
+@media (max-width: 770px) {
+    .container {
+        padding: 0 20px;
+    }
+    .header__body {
+        flex-direction: row;
+    }
+    .burger {
+        display: block;
+    }
+    body.click .header__nav {
+        right: 0;
+    }
+    .header__nav {
+        position: absolute;
+        background-color: #F3F7F9;
+        right: -100%;
+        top: 40px;
+        width: 50%;
+        height: 1000vh;        
+        flex-direction: column;
+        justify-content: flex-start;  
+        align-items: start;      
+        padding: 40px 20px;
+        transition: 0.5s;
+        & .header__menu {
+            flex-direction: column;
+            align-items: start;
+        }
+        & a {
+            color: #000000;
+        }
+        & .header__sub {
+            text-align: start;
+            position: relative;
+            top: 0;
+            left: 0;
+            background: none;
+            border: none;
+        }
+        & .sub-menu:after {
+            display: none;
+        }
+        & .sub-menu button::after {
+            content: '';
+            display: inline-block;
+            width: 15px;
+            height: 8px;
+            margin: 0 0 0 3px;
+            background: url('../img/chevron-down.svg') no-repeat;
+            transition: 0.2s;
+        }
+        & .sub-menu.active button::after {
+            transform: rotate(180deg);
+        }
+        & .header__sub li:not(:last-child) {
+            border-bottom: none;
+        }
+        & .header__sub li {
+            min-width: 1px;
+            padding: none;
+            padding: 0 1px 0 0;
+        }
+    }
+    .main__menu {
+        padding: 0 0 25px 0;
+    }
+    .about__text {
+        width: 100%;
+    }
+    .about__card {
+        position: relative;
+        width: 100%;
+        right: 0;
+    }
+    .programm__last {
+        max-width: 100%;
+    }
+    .programm__accordion {
+        max-width: 100%;
+    }
+    .precent .row {
+        flex-direction: column-reverse;
+    }
+    .row {
+        flex-direction: column;
+    }
+    .spikers__block {
+        width: 100%;
+    }
+    .spikers__block img {
+        margin: 0;
+    }
+    .sponser__block {
+        width: 100%;
+    }
+    .partner__block {
+        width: 100%;
+    }
+    .h-title, h1 {
+        font-size: 2rem;
+    }
+    .programm__decrip .programm__decrip {
+        flex-direction: row;
+    }
+    .programm__decrip {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .precent__img img {
+        width: 100%;
+    }
+    .precent__img .precent__img-dis {
+        right: -30px;
+    }
+    .h-title, h1 {
+        font-size: 1.8rem;
+    }
+}
